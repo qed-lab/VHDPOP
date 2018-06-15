@@ -2,7 +2,7 @@
 
 (define (problem full-stomach-a)
   (:domain full-stomach)
-  (:objects yuanyuan home)
+  (:objects yuanyuan - person home - location)
   (:init (at yuanyuan home)
         (has Restaurant Food)
         (has Market Ingredients))

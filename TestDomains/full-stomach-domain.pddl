@@ -2,16 +2,12 @@
 
 (define (domain full-stomach)
   (:requirements :strips :decompositions :equality)
-  (:types person location physob)
-  (:constants (Food - physob)
-          (Ingredients - physob)
-          (Car - physob)
-          (Market - location)
-          (Restaurant - location))
+  (:types person location physob - object)
+  (:constants Food Ingredients Car - physob Market Restaurant - location)
   (:predicates (at ?p - person ?l - location)
           (at ?o - physob ?l - location)
           (has ?l - location ?o - physob)
-          (owns ?p - person ?o - pyhsob)
+          (owns ?p - person ?o - physob)
           (full ?p - person))
 
   (:action full-stomach
