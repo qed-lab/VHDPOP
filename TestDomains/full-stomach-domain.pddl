@@ -64,7 +64,7 @@
   (:action buy
     :parameters (?p - person ?l - location ?o - physob)
     :precondition (and (at ?p ?l)
-        (has ?l ?o)
+        (has ?l ?o))
     :effect (owns ?p ?o)
     :composite f)
 
